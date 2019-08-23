@@ -6,18 +6,14 @@ package org.proli.avproject.practice;
  */
 public class QuickSort {
 
-    public static void main(String[] args) {
 
-        int[] numbers = {32, 43, 23, 13, 5};
-
-        quickSort(numbers, 0, 4);
-
-        for (int number : numbers) {
-            System.out.println(number);
-        }
-    }
-
-    public static void quickSort(int[] numbers, int start, int end) {
+    /**
+     *  快速排序
+     * @param numbers
+     * @param start
+     * @param end
+     */
+     static void quickSort(int[] numbers, int start, int end) {
         if (start < end) {
             // 选定的基准值（第一个数值作为基准值）
             int base = numbers[start];
